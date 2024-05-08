@@ -21,6 +21,7 @@ Step 8:Calculate the probability of the observed sequence by summing the last ro
 Step 9:Find the most likely sequence of hidden states by selecting the hidden state with the highest probability at each time step based on the alpha matrix.<br>
 
 ## Program:
+```
 import numpy as np
 transition_matrix=np.array([[0.7,0.3],[0.4,0.6]])
 initial_probabilities=np.array([0.5,0.5])
@@ -40,7 +41,7 @@ for t in range(len(observed_sequence)):
   else:
     most_likely_sequence.append('rainy')
 print("The most likely sequence of weather states is:",most_likely_sequence)
-
+```
 ## Output:
 probability of the observed sequence:
 
